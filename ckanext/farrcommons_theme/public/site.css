@@ -1,0 +1,43 @@
+body {
+  background-color: #Fff;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.masthead{
+  color: #005d7a;
+  background: #ffffff;
+}
+
+.hero{
+  background:url("/images/William_Farr.jpg");
+  background-size:50%;
+
+}
+
+
+.masthead .nav > li > a {
+  color: #005d7a;
+  background: #ffffff;
+}
+
+#header-logo{
+  max-width: 100px;
+}
+
+
+.account-masthead{
+  background: #9d9d9d;
+  color: #ffffff;
+}
+
+.account-masthead .account ul li a{
+  color: #ffffff;
+}
+
+.site-footer {
+ background: #9d9d9d;
+}
+
+.site-footer, .site-footer a, .site-footer label, .site-footer small {
+  color: #ffffff;
+}
