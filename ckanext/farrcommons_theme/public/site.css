@@ -9,8 +9,10 @@ body {
 }
 
 .hero{
-  background:url("/images/William_Farr.jpg");
+  background:url("/images/William_Farr.jpg") no-repeat right center;
   background-size:50%;
+  background-color:white;
+  opactity: 0.5;
 
 }
 
