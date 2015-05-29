@@ -1,0 +1,135 @@
+{
+  "scheming_version": 1,
+  "schema_type": "FairProfile",
+  "dataset_type": "datacite",
+  "id" : "DataCite-minimal",
+  "name" : "Data Cite Minimal",
+  "about": "A a schema to cover the DataCite requirements",
+  "about_url": "",
+  "version": "0.1" ,
+  "dataset_fields": [
+    {
+      "field_name": "title",
+      "label": "Title",
+      "preset": "title",
+      "form_placeholder": "eg. A descriptive title"
+    },
+    {
+      "field_name": "name",
+      "label": "URL",
+      "preset": "dataset_slug",
+      "form_placeholder": "eg. my-dataset"
+    },
+    {
+      "field_name": "id",
+      "label": "Identifier",
+      "form_placeholder": "eg. DOI, PubMed ID, etc"
+    },
+    {
+      "field_name": "creator",
+      "label": "Creator",
+      "form_placeholder": "The main researcher(s) invloved in producing the data"
+    },
+    {
+      "field_name": "publisher",
+      "label": "Publisher",
+      "form_placeholder": "The name of the entitiy that holds, archives, produces or releases the resource."
+    },
+    {
+      "field_name": "publication_year",
+      "label": "Publication Year",
+      "form_placeholder": "The Year when the data was or will be made publicly available."
+    },
+    {
+      "field_name": "description",
+      "label": "Description",
+      "form_snippet": "markdown.html",
+      "form_placeholder": "eg. All additional information that does not fit in any of the other categories."
+    },
+    {
+      "field_name": "tag_string",
+      "label": "Subject",
+      "preset": "tag_string_autocomplete",
+      "form_placeholder": "eg. economy, mental health, government"
+    },
+    {
+      "field_name": "license_id",
+      "label": "License",
+      "form_snippet": "license.html"
+    },
+    {
+      "field_name": "owner_org",
+      "label": "Organization",
+      "preset": "dataset_organization"
+    },
+    {
+      "field_name": "url",
+      "label": "Source",
+      "form_placeholder": "http://example.com/dataset.json",
+      "display_property": "foaf:homepage",
+      "display_snippet": "link.html"
+    },
+    {
+      "field_name": "version",
+      "label": "Version",
+      "validators": "ignore_missing unicode package_version_validator",
+      "form_placeholder": "1.0"
+    },
+    {
+      "field_name": "author",
+      "label": "Author",
+      "form_placeholder": "Joe Bloggs",
+      "display_property": "dc:creator"
+    },
+    {
+      "field_name": "author_email",
+      "label": "Author Email",
+      "form_placeholder": "joe@example.com",
+      "display_property": "dc:creator",
+      "display_snippet": "email.html",
+      "display_email_name_field": "author"
+    },
+    {
+      "field_name": "maintainer",
+      "label": "Maintainer",
+      "form_placeholder": "Joe Bloggs",
+      "display_property": "dc:contributor"
+    },
+    {
+      "field_name": "maintainer_email",
+      "label": "Maintainer Email",
+      "form_placeholder": "joe@example.com",
+      "display_property": "dc:contributor",
+      "display_snippet": "email.html",
+      "display_email_name_field": "maintainer"
+    }
+  ],
+  "resource_fields": [
+    {
+      "field_name": "url",
+      "label": "Identifier: e.g. DOI, URL etc"
+    },
+    {
+      "field_name": "name",
+      "label": "Name",
+      "form_placeholder": "eg. January 2011 Gold Prices"
+    },
+    {
+      "field_name": "description",
+      "label": "Description",
+      "form_snippet": "markdown.html",
+      "form_placeholder": "Some useful notes about the data"
+    },
+    {
+      "field_name": "format",
+      "label": "Format",
+      "preset": "resource_format_autocomplete"
+    },
+    {
+      "field_name": "version",
+      "label": "Version",
+      "form_placeholder": "eg. 0.0.1, 1.0.0-alpha"
+    }
+
+  ]
+}
